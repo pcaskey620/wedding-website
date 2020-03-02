@@ -277,11 +277,11 @@ Hero
     font-weight: 300;
     margin-bottom: 80px;
   }
-  .hero-content {
-    padding-top: 40%;
-  }
+  // .hero-content {
+  //   padding-top: 15%;
+  // }
   .hero-content img {
-    width: 55%;
+    width: 80%;
     margin-bottom: 12%;
   }
 }
@@ -296,9 +296,31 @@ Hero
   background-color: rgba(55, 36, 40, .88);
   z-index: 999;
   width: 100%;
+  color: #fff;
+
+  ul.primary-nav {
+    margin: 0 0 0 75px;
+    padding: 0;
+
+    li {
+      display: inline;
+
+      a {
+        color: $txt-light;
+        padding-right: 25px;
+
+        &:hover {
+          color: $txt-light;
+        }
+      }
+      &:last-child a {
+        padding-right: 0px;
+      }
+    }
+  }
 }
 header {
-  padding: 50px 0;
+  padding: 25px 0;
   border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
@@ -318,7 +340,7 @@ header {
     display: inline-block;
   }
   .logo img {
-    height: 19px;
+    height: 85px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -328,7 +350,7 @@ header {
       display: inline;
 
       a {
-        color: $txt-light;
+        color: $txt-red;
         padding-right: 25px;
 
         &:hover {
@@ -340,16 +362,15 @@ header {
       }
     }
   }
+
+  
+
   ul.member-actions {
     li {
       display: inline;
 
       a {
-        color: $txt-light;
-
-        &:hover {
-          color: $accent-color;
-        }
+        color: $txt-red;
       }
     }
   }
@@ -361,6 +382,14 @@ header {
     right: 0;
     top: 41px;
     transition: all 300ms ease-in-out;
+    color: $txt-light;
+  }
+  ul.member-actions-white {
+    li {
+      a {
+        color: $txt-light;
+      }
+    }
   }
 }
 .down-arrow {

@@ -93,26 +93,43 @@ $(document).ready(function () {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "none",
-                    "padding": "35px 0"
+                    //"padding": "35px 0"
+                    "padding": "15px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "26px",
-                });
+                    "top": "38px",                    
+                });                
+                $('.member-actions').addClass('member-actions-white');
                 $('header .navicon').css({
-                    "top": "34px",
+                    "top": "44px",
                 });
+
+                $('#logo-img-black').hide();
+                $('#logo-img-white').show();
+
+                //$('#logo-img-lg-red').hide();
+                //$('#logo-img-lg').show();
+
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
                     "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "padding": "50px 0"
+                    //"padding": "50px 0"
+                    "padding": "30px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "41px",
+                    "top": "53px",                    
                 });
+                $('.member-actions').removeClass('member-actions-white');
                 $('header .navicon').css({
-                    "top": "48px",
+                    "top": "58px",
                 });
+                
+                $('#logo-img-white').hide();
+                $('#logo-img-black').show();
+
+                //$('#logo-img-lg').hide();
+                //$('#logo-img-lg-red').show();
             }
         });
     });
@@ -137,6 +154,7 @@ $(document).ready(function () {
     });
 
     /********************** Social Share buttons ***********************/
+    /*
     var share_bar = document.getElementsByClassName('share-bar');
     var po = document.createElement('script');
     po.type = 'text/javascript';
@@ -160,7 +178,7 @@ $(document).ready(function () {
         share_bar[i].innerHTML = html;
         share_bar[i].style.display = 'inline-block';
     }
-
+    */
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
 
@@ -184,10 +202,10 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Jessica and Parker's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Feb 20, 2021 10:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
