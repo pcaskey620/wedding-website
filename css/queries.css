@@ -253,9 +253,9 @@
 }
 
 @media screen and (max-width: 640px) {
-    /* .hero .hero-content {
+    .hero .hero-content {
         padding-top: 100%;
-    } */
+    }
 
     #eng-pics .img-wrap i {
         font-size: 25px;
@@ -292,9 +292,9 @@
 }
 
 @media screen and (max-width: 480px) {
-    /* .hero .hero-content {
+    .hero .hero-content {
         padding-top: 110%;
-    } */
+    }
     
     .hero .hero-content img {
         width: 65%;
@@ -356,9 +356,9 @@
 }
 
 @media screen and (max-width: 320px) {
-    /* .hero .hero-content {
+    .hero .hero-content {
         padding-top: 130%;
-    } */
+    }
 
     .rsvp {
         padding-top: 20px;
