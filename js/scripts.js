@@ -48,21 +48,38 @@ $(document).ready(function () {
         offset: '75%'
     });
 
-    /***************** Initiate Flexslider ******************/
-    $('.flexslider').flexslider({
-        animation: "slide"
+    /***************** Initiate Lightgallery ******************/
+    $("#intro").lightGallery({
+        selector: '.lightgallery-item',
+        thumbnail: false,
+        keyPress: false,
+        controls: false, 
+        getCaptionFromTitleOrAlt: false, 
+        enableDrag: false,
+        enableSwipe: false,
+        counter: false
     });
 
-    /***************** Initiate Fancybox ******************/
-
-    $('.single_image').fancybox({
-        padding: 4
+    $("#instagram").lightGallery({
+        selector: '.lightgallery-item',
+        thumbnail: false,
+        keyPress: false,
+        controls: false, 
+        getCaptionFromTitleOrAlt: false, 
+        enableDrag: false,
+        enableSwipe: false,
+        counter: false
     });
 
-    $('.fancybox').fancybox({
-        padding: 4,
-        width: 1000,
-        height: 800
+    $("#lightgallery").lightGallery({
+        selector: '.lightgallery-item',
+        thumbnail: true,
+        keyPress: true,
+        controls: true,
+        getCaptionFromTitleOrAlt: false,
+        enableDrag: true,
+        enableSwipe: true,
+        counter: true
     });
 
     /***************** Tooltips ******************/
