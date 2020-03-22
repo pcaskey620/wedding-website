@@ -27,6 +27,18 @@
     .hero .hero-content {
         padding-top: 50%;
     }
+    
+    .fixed ul.primary-nav li {
+        display: block;        
+    }
+
+    .fixed ul.primary-nav li a {
+        padding-right: 0px;
+    }
+
+    .fixed ul.primary-nav {
+        margin: 0 0 0 0px;
+    }
 
     .header-nav {
         position: fixed;
@@ -40,6 +52,14 @@
         opacity: 0;
         -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
         transition: opacity 0.5s, visibility 0s 0.5s;
+    }
+
+    header ul.primary-nav li a {
+        color: white;
+    }
+    
+    header ul.member-actions li a {
+        color: white;
     }
 
     ul.member-actions {
