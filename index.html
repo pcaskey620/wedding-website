@@ -25,14 +25,19 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/queries.css">    
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="js/vendor/lightgallery/css/lightgallery.css" />
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body id="top">
+<body id="top" class="font-raleway">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -51,7 +56,7 @@
                         <ul class="primary-nav">
                             <li><a href="#intro" title="How we met">How we met</a></li>
                             <li><a href="#events" title="Events">Events</a></li>                            
-                            <li><a href="#eng-pics" title="Engagement">Engagement</a></li>
+                            <li><a href="#engagement" title="Engagement">Engagement</a></li>
                             <li><a href="#video">Proposal Video</a></li>
                             <li><a href="#instagram" title="Instagram">Instagram</a></li>
                             <li><a href="https://www.parksandwils.com" title="Our Blog" target="_blank">Our Blog</a></li>
@@ -276,11 +281,11 @@
 
 </section>
 
-<section id="eng-pics" class="section-padding">
+<section id="engagement" class="section-padding">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="header">Engagement</h3>
+                <h3 class="header">ENGAGEMENT</h3>
             </div>
         </div>
         <div class="row">
@@ -294,6 +299,25 @@
                 </p>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="video">
+    <div id="video-bg" class="">
+        <div id="bgndVideo" class="player"
+            data-property="{videoURL:'https://youtu.be/ecVQ3u7UMd8',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, useOnMobile: true, opacity:1}">
+        </div>
+        <div id="video-content">
+            <h5 class="hidden-sm hidden-xs">Steamboat Springs, Colorado</h5>            
+            <h4 class="hidden-md hidden-lg hidden-xl">Steamboat Springs, Colorado</h4>
+            <p>Kiss in the snow.</p>
+            <a class="btn" href="https://youtu.be/ecVQ3u7UMd8" style="color: white;" title="Proposal Video" target="_blank">Proposal Video</a>
+        </div>
+    </div>
+</section>
+
+<section id="eng-pics" class="section-padding">
+    <div class="container-fluid">                
         <div class="row" id="lightgallery">
             <div class="col-md-2 pb-10">
                 <a class="lightgallery-item" rel="group" href="img/eng_pics/IMG_8246.jpg">
@@ -364,39 +388,10 @@
         </div>
     </div>
 </section>
-
-<section id="video">
-    <div id="video-bg" class="">
-        <div id="bgndVideo" class="player"
-            data-property="{videoURL:'https://youtu.be/ecVQ3u7UMd8',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, useOnMobile: true, opacity:1}">
-        </div>
-        <div id="video-content">
-            <h5 class="hidden-sm hidden-xs">Steamboat Springs, Colorado</h5>            
-            <h4 class="hidden-md hidden-lg hidden-xl">Steamboat Springs, Colorado</h4>
-            <p>Kiss in the snow.</p>
-            <a class="btn" href="https://youtu.be/ecVQ3u7UMd8" style="color: white;" title="Proposal Video" target="_blank">Proposal Video</a>
-        </div>
-    </div>
-    <div class="container hidden-xl hidden-lg hidden-md">
-        <hr />
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Watch Parker's Proposal</h3>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col s12 m12 l12">
-                <div class="youtube-responsive" style="margin-top: 1em;">
-                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ecVQ3u7UMd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>        
-    </div>
-</section>
-
+<hr />
 <section id="map" class="section-padding">
     <div class="text-center">
-        <h3>How do I get there?</h3>
+        <h3 class="header">How do I get there?</h3>
         <p>
             There are a few options for traveling to Steamboat!
         </p>

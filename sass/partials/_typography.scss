@@ -7,6 +7,10 @@ $sans-serif: 'Open Sans', sans-serif;
 $serif: Merriweather, Georgia, 'Times New Roman', serif;
 $accent-font: 'Nunito', sans-serif;
 
+$raleway: 'Raleway', sans-serif;
+$roboto: 'Roboto Slab', serif;  
+
+
 // Weights
 
 $light: 300;
@@ -62,10 +66,12 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: $base-line-height;
+  font-family: $roboto;
 }
 
 h4 {
   font-size: $font-size-h4;
+  font-family: $roboto;
 }
 
 h5 {
