@@ -812,6 +812,22 @@ Embed video
   color: #ffffff;
 }
 
+
+.youtube-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.youtube-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 /* ==========================================================================
 Google map
 ========================================================================== */
@@ -950,7 +966,7 @@ footer {
     margin-top: -5px;
   }
   span.fa-heart {
-    color: #ff415c;
+    color: #660000;
     font-size: 18px;
     margin: 0 2px;
   }
