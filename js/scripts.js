@@ -200,6 +200,12 @@ $(document).ready(function () {
     $('.player').YTPlayer();
     $('#btnProposalVideo').click(function () {
         $('#video-content').addClass('animated fadeOut');
+        
+        if ($(window).width() > 991) {
+            $('#video-bg').height('500px');    
+        } 
+
+        $('#containerProposalVideoYoutube').show();
     });
 
     /********************** Toggle Map Content **********************/

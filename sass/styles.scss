@@ -1001,9 +1001,13 @@ Fancybox override
 Helpers
 ========================================================================== */
 .pt-10 {
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .pb-10 {
   padding-bottom: 10px;
+}
+
+#containerProposalVideoYoutube {
+  display: none;
 }
