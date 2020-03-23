@@ -198,7 +198,9 @@ $(document).ready(function () {
     */
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
-
+    $('#btnProposalVideo').click(function () {
+        $('#video-content').addClass('animated fadeOut');
+    });
 
     /********************** Toggle Map Content **********************/
     $('#btn-show-map').click(function () {
