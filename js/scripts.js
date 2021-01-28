@@ -27,13 +27,8 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
-    $('.wp5-5').waypoint(function () {
-        $('.wp5-5').addClass('animated fadeInRight');
-    }, {
-        offset: '75%'
-    });
     $('.wp6').waypoint(function () {
-        $('.wp6').addClass('animated fadeInLeft');
+        $('.wp6').addClass('animated fadeInRight');
     }, {
         offset: '75%'
     });
@@ -52,14 +47,9 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
-    $('.wp10').waypoint(function () {
-        $('.wp10').addClass('animated fadeInUp');
-    }, {
-        offset: '75%'
-    });
 
     /***************** Initiate Lightgallery ******************/
-    $("#how-we-met").lightGallery({
+    $("#intro").lightGallery({
         selector: '.lightgallery-item',
         thumbnail: false,
         keyPress: false,
@@ -237,23 +227,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Jessica and Parker's Elopement",
+            title: "Jessica and Parker's Wedding",
 
             // Event start date
-            start: new Date('Feb 26, 2022 00:00'),
+            start: new Date('Feb 20, 2021 10:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Feb 26, 2022 00:00'),
+            end: new Date('Nov 29, 2017 00:00'),
 
             // Event Address
-            address: 'Silverthorne Pavilion, Silverthorne, Colorado',
+            address: 'ITC Fortune Park Hotel, Kolkata',
 
             // Event Description
-            description: "We can't wait to see you on our big day!"
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
         }
     });
 
@@ -294,7 +284,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {    
-    var location = {lat: 39.632446, lng: -106.073859};
+    var location = {lat: 40.357443, lng: -106.815058};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,

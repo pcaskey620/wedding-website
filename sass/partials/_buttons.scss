@@ -11,14 +11,10 @@
 	display: inline-block;
 	text-transform: uppercase;
 }
-//.btn:hover, .btn:focus {
-.btn {
+.btn:hover, .btn:focus {
 	color: $white-color;
 	border-color: $accent-color;
 	background-color: $accent-color;
-}
-.btn:hover, .btn:focus {
-	color: $white-color;
 }
 .btn-white {
 	font-size: 13px;
