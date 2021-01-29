@@ -162,7 +162,7 @@ Animations
 /* ==========================================================================
 Waypoinsts
 ========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wp5-5, .wp10 {
+.wp1, .wp2, .wp3, .wp3-5, .wp4, .wp5, .wp5-5, .wp6, .wp7, .wp8, .wp9, .wp10, .wp11, .wp12 {
   visibility: hidden
 }
 .wp8, .wp9 {
@@ -178,7 +178,7 @@ Navigation
 ========================================================================== */
 .header-nav.open {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 0.95;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
@@ -1018,7 +1018,17 @@ p .text-white {
   color: white!important;
 }
 
-#celebration {
+#celebration, #instagram {
   background-color: rgba(55,36,40,0.88);
   color: white;
+}
+.btn-large {
+  font-size: 17px;
+}
+#logo-mobile-nav {
+  display: none;
+  max-height: 120px;
+}
+#nav-heart {
+  display: none;
 }

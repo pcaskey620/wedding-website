@@ -13,12 +13,17 @@ $(document).ready(function () {
         offset: '75%'
     });
     $('.wp3').waypoint(function () {
-        $('.wp3').addClass('animated fadeInLeft');
+        $('.wp3').addClass('animated fadeInUp');
+    }, {
+        offset: '75%'
+    });
+    $('.wp3-5').waypoint(function () {
+        $('.wp3-5').addClass('animated fadeInUp');
     }, {
         offset: '75%'
     });
     $('.wp4').waypoint(function () {
-        $('.wp4').addClass('animated fadeInRight');
+        $('.wp4').addClass('animated fadeInDown');
     }, {
         offset: '75%'
     });
@@ -54,6 +59,16 @@ $(document).ready(function () {
     });
     $('.wp10').waypoint(function () {
         $('.wp10').addClass('animated fadeInUp');
+    }, {
+        offset: '75%'
+    });
+    $('.wp11').waypoint(function () {
+        $('.wp11').addClass('animated fadeInUp');
+    }, {
+        offset: '75%'
+    });
+    $('.wp12').waypoint(function () {
+        $('.wp12').addClass('animated fadeInUp');
     }, {
         offset: '75%'
     });
