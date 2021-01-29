@@ -284,7 +284,7 @@
         left: 50%;
         transform: translateX(-50%); */
         color: #660000;
-        display: inline;
+        display: block;
         font-size: 3rem;
     }
 }
