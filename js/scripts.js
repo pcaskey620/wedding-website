@@ -85,6 +85,17 @@ $(document).ready(function () {
         counter: false
     });
 
+    $("#engagement").lightGallery({
+        selector: '.lightgallery-item',
+        thumbnail: false,
+        keyPress: false,
+        controls: false, 
+        getCaptionFromTitleOrAlt: false, 
+        enableDrag: false,
+        enableSwipe: false,
+        counter: false
+    });
+
     $("#instagram").lightGallery({
         selector: '.lightgallery-item',
         thumbnail: false,
