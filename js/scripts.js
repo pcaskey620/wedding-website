@@ -107,6 +107,17 @@ $(document).ready(function () {
         counter: false
     });
 
+    $("#lightgallery-elope").lightGallery({
+        selector: '.lightgallery-item',
+        thumbnail: true,
+        keyPress: true,
+        controls: true,
+        getCaptionFromTitleOrAlt: false,
+        enableDrag: true,
+        enableSwipe: true,
+        counter: true
+    });
+
     $("#lightgallery").lightGallery({
         selector: '.lightgallery-item',
         thumbnail: true,
