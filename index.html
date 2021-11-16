@@ -68,6 +68,7 @@
                         <ul class="primary-nav">
                             <li><img id="logo-mobile-nav" src="img/logo.png" alt="Logo"></li>
                             <li><a href="#elopement" title="Celebration">Celebration</a></li>
+                            <li><a href="#rsvp" title="RSVP">RSVP</a></li>
                             <li><a href="#elopement-video" title="Celebration">Elopement Video</a></li>
                             <li><a href="#how-we-met" title="How we met">How we met</a></li>
                             <li><a href="#engagement" title="Engagement">Engagement</a></li>
@@ -143,7 +144,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <div>
                     <div class="wp5">
-                        <h3 class="header">Upcoming Events</h3> 
+                        <h3 class="header">Friday Events</h3> 
                         <h4>
                             <strong>February 25, 2022</strong>
                         </h4>                        
@@ -152,31 +153,14 @@
                         </h5>
                         <p>
                             Join us for a day on the slopes! We will be skiing and snowboarding at Keystone Resort and anyone is welcome to join! Keystone is located 15 minutes from Silverthorne. Please purchase lift tickets in advance. 
-                        </p>
-                        <!-- <h4>
-                            <strong>February 26, 2021</strong>
-                        </h4>                        
-                        <h5>Après Ski
-                            <i class="fa fa-skiing"></i>
-                        </h5>
-                        <p>
-                            We went backcountry skiing with a private mountain guide off Vail Pass in White River National Forest! 
-                            It was an awesome day in the snow and celebrating by doing something we love so much together. 
-                        </p> -->
+                        </p>                      
                     </div>
-                    <div class="wp5-5"> 
-                        <h4>
-                            <strong>February 26, 2021</strong>
-                        </h4>
-                        
-                        <h5>Celebration
+                    <div class="wp5-5">                                                 
+                        <h5>Après Ski
                             <i class="fa fa-glass-cheers"></i>
                         </h5>
                         <p>
-                            We are hosting a marriage celebration at the Silverthrone Pavilion and we really look forward to seeing you there! Jessica and I will be renewing our vows followed by drinks and dancing. 
-                            <a class="btn btn-accent btn-xsmall text-white" data-toggle="modal" data-target="#dc-modal">
-                                <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
-                            </a>
+                            Let's get together for beers at Angry James Brewery! Meet us there at 7 PM.
                         </p>
                         
                         <!-- <p>
@@ -188,8 +172,23 @@
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <div class="wp6">
-                    <h3 class="header">Past Events</h3>
+                    <h3 class="header">Saturday Events</h3>
                     <h4>
+                        <strong>February 26, 2022</strong>
+                    </h4>
+
+                    <h5>Vow Renewal 
+                        <i class="fa fa-heart"></i>
+                    </h5>
+                    <p>
+                        We are hosting a marriage celebration at the Silverthrone Pavilion and we really look forward to seeing you there! Jessica and I will be renewing our vows followed by drinks and dancing.                             
+                    </p>
+                    <p>
+                        <a class="btn btn-accent btn-xsmall text-white mt-1" data-toggle="modal" data-target="#dc-modal">
+                            <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+                        </a>
+                    </p>
+                    <!-- <h4>
                         <strong>February 25, 2021</strong>
                     </h4>
 
@@ -201,13 +200,125 @@
                         Using snowshoes we hiked up to the spot and began our intimate ceremony. 
                         We wrote our own vows and are so excited to begin the next journey of our lives together!
                         Afterwards we did a ski run down the pass and headed off to an incredible dinner in Silverthorne. 
-                    </p>
+                    </p> -->
                 </div>
                 
             </div>
         </div> 
     </div>
 </section>
+
+<section class="rsvp text-center" id="rsvp" class="section-padding"> 
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <span id="thank-you-heart" class="fa fa-heart pulse2"></span>
+                        <h3>Thank you!</h3>
+                        <p id="rsvp-modal-text"></p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row pt-10">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>What are you waiting for?</h3>
+                <p>We would greatly appreciate if you could RSVP before 15th of January, 2022</p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input type="name" name="first-name" class="" id="first-name"
+                                                                     placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input type="name" name="last-name" class="" id="last-name"
+                                                                     placeholder="Last Name">
+                            </div>
+                        </div>                        
+                    </div>                    
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button id="submit-rsvp" class="btn-fill rsvp-btn">Yes, that's me!</button>
+                </form>
+                <form id="rsvp-form-details" class="rsvp-form" action="" method="POST">
+                    <div class="row" id="rsvp-form-details-1">
+                        <div class="col-md-12 col-sm-12 text-left">
+                            <label>Guest: </label> <span id="rsvp-guest-1"></span>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-calendar-check"></i>
+                                <select name="attending_selection_1" id="attending_selection_1" class="" >
+                                    <option value="" disabled selected hidden>Select attendence choice</option>
+                                    <option value="attending">Attending</option>
+                                    <option value="not-attending">Not Attending</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group" id="food_selection_1_group">
+                                <i class="fa fa-utensils"></i>
+                                <select name="food_selection_1" id="food_selection_1" class="" >
+                                    <option value="" disabled selected hidden>Select food choice</option>
+                                    <option value="Chicken">Blue cheese stuffed chicken</option>
+                                    <option value="Salmon">Fresh herb encrusted salmon</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="rsvp-form-details-2">
+                        <div class="col-md-12 col-sm-12 text-left">
+                            <label>Guest: </label> <span id="rsvp-guest-2"></span>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-calendar-check"></i>
+                                <select name="attending_selection_2" id="attending_selection_2" class="" >
+                                    <option value="" disabled selected hidden>Select attendence choice</option>
+                                    <option value="attending">Attending</option>
+                                    <option value="not-attending">Not Attending</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group" id="food_selection_2_group">
+                                <i class="fa fa-utensils"></i>
+                                <select name="food_selection_2" id="food_selection_2" class="" >
+                                    <option value="" disabled selected hidden>Select food choice</option>
+                                    <option value="Chicken">Blue cheese stuffed chicken</option>
+                                    <option value="Salmon">Fresh herb encrusted salmon</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="hiddenGuestOneFirstName" name="first_name_1" />                    
+                    <input type="hidden" id="hiddenGuestOneLastName" name="last_name_1" />
+                    <input type="hidden" id="hiddenGuestTwoFirstName" name="first_name_2" />                    
+                    <input type="hidden" id="hiddenGuestTwoLastName" name="last_name_2" />
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper2"></div>
+                    </div>
+                    <button id="submit-rsvp-details" class="btn-fill rsvp-btn">Submit RSVP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <section id="map" class="section-padding" style="padding-top: 0px;">
     <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -280,18 +391,18 @@
             <div class="col-md-12 text-center wp3-5">
                 <h3 class="header text-white">How do I get there?</h3>
                 <div class="pb-10 text-white">
-                    Fly into Denver International Airport. Silverthorne is about a one and a half hour drive West. Renting a car or taking a shuttle are both great options! Please be prepared for winter conditions. 
+                    Fly into Denver International Airport. Silverthorne is about a one and a half hour drive West. Renting a car or taking a shuttle are both great options!<br />Please be prepared for winter conditions. 
                 </div>
                 <a class="btn btn-accent btn-xsmall text-white" title="Summit Express Shuttle" href="https://www.summitexpress.com/scheduled-shuttle-service/denver-airport-to-silverthorne-and-dillon-shuttle/" target="_blank">Summit Express Shuttle</a>            
             </div>
             <div class="col-md-12 text-center wp3-5">
                 <h3 class="header text-white">Where do I stay?</h3>
-                <div class="row">                
+                <!-- <div class="row">                
                     <div class="text-white col-sm-12 pb-10">
                         <a title="Summit Sky Ranch" href="https://www.summitskyranchrentals.com/" target="_blank" class="text-white">Summit Sky Ranch</a> is a beautiful mountain community with 3 and 4 bedroom rentals available.                        
                     </div>
                     <a class="btn btn-accent btn-xsmall text-white" title="Summit Sky Ranch" href="https://www.summitskyranchrentals.com/" target="_blank">Summit Sky Ranch</a>                                                                
-                </div>
+                </div> -->
                 <div class="row">  
                     <div class="text-white col-sm-12 pt-10 pb-10">
                         <a title="The Pad" href="https://thepadlife.com/silverthorne/" target="_blank" class="text-white">The Pad</a> is Silverthorne's first boutique hotel/hostel and is conveniently located along the Blue River walking distance from Silverthorne Pavilion.                         
@@ -300,8 +411,11 @@
                 </div>
                 <div class="row">  
                     <div class="text-white col-sm-12 pt-10" >
-                        Airbnb and Vrbo are also good options. February is peak ski season in the Rocky Mountains so please book early for the best rates.
-                    </div>                                            
+                        Airbnb and Vrbo are also good options. We recommend the Wildernest neighborhood because of the free bus that takes you to town across from the venue. <br />February is peak ski season in the Rocky Mountains so please book early for the best rates.
+                    </div>   
+                    <div class="text-white col-sm-12 pt-10" >
+                        
+                    </div>                                                                                     
                 </div>
             </div>
             <div class="col-md-12 text-center wp3-5">
@@ -550,6 +664,66 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">ELOPEMENT</h3>
+                <h4>February 25, 2021</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 hidden-sm hidden-xs">
+                <a class="lightgallery-item" rel="echo_lake_pics" href="img/elope_pics/kiss.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/elope_pics/kiss.jpg" loading="lazy" class="img-rounded">                        
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 text-center wp12">
+                <p>
+                    Jessica and I eloped off Loveland Pass Road, a high mountain pass in the Rocky Mountains topping out at 11,990 feet above sea level! Using snowshoes we hiked up to the spot and began our intimate ceremony. 
+                    We wrote our own vows and are so excited to begin the next journey of our lives together! 
+                    Afterwards we did a ski run down the pass and headed off to an incredible dinner in Silverthorne.
+                </p>
+                <a class="btn btn-accent btn-small" title="View All Elopement Photos" href="https://christinajoyphotography.pixieset.com/jessicaandparker/elopement/" target="_blank">Elopement Photos</a>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs">
+                <a class="lightgallery-item" rel="echo_lake_pics" href="img/elope_pics/skiing.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/elope_pics/skiing.jpg" loading="lazy" class="img-rounded">                        
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row pt-10">
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
+                <a class="lightgallery-item" rel="echo_lake_pics" href="img/elope_pics/kiss.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/elope_pics/kiss.jpg" loading="lazy" class="img-rounded">                        
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg">
+                <a class="lightgallery-item" rel="echo_lake_pics" href="img/elope_pics/skiing.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/elope_pics/skiing.jpg" loading="lazy" class="img-rounded">                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="video">
@@ -706,81 +880,9 @@
 </section>
 
 
-<!--
-<hr />
-<section class="rsvp text-center" id="rsvp">
 
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- <hr /> -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of December, 2020</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0" max="4"
-                                                                placeholder="Invite code"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
--->
 
 <footer>
     <div class="container">
@@ -805,7 +907,7 @@
 <script src="js/vendor/lightgallery/js/lg-thumbnail.js"></script>
 
 <script src="js/scripts.min.js"></script>
-
+<!-- <script src="js/scripts.js"></script> -->
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALvTDDLZLsNtxTdNmHuqBjsTTooLwkA2M&callback=initMap"></script>

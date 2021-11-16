@@ -1,3 +1,581 @@
+// Created using https://csvjson.com/csv2json
+var json = {
+    "people": {
+        "person": [
+            {
+              "first": "Jean",
+              "last": "Wilson",
+              "group": 1
+            },
+            {
+              "first": "Tony",
+              "last": "Wilson",
+              "group": 1
+            },
+            {
+              "first": "Lizzie",
+              "last": "Wilson",
+              "group": 2
+            },
+            {
+              "first": "Wesley",
+              "last": "Wilson",
+              "group": 2
+            },
+            {
+              "first": "Joshua",
+              "last": "Wilson",
+              "group": 3
+            },
+            {
+              "first": "Nana",
+              "last": "Wilson",
+              "group": 4
+            },
+            {
+              "first": "Grampie",
+              "last": "Wilson",
+              "group": 4
+            },
+            {
+              "first": "Dana",
+              "last": "Lizak",
+              "group": 5
+            },
+            {
+              "first": "Ed",
+              "last": "Lizak",
+              "group": 5
+            },
+            {
+              "first": "Matthew",
+              "last": "Lizak",
+              "group": 5
+            },
+            {
+              "first": "Andy",
+              "last": "Lizak",
+              "group": 5
+            },
+            {
+              "first": "Maddy",
+              "last": "Van Fossen",
+              "group": 5
+            },
+            {
+              "first": "Darcy",
+              "last": "Morgan",
+              "group": 6
+            },
+            {
+              "first": "Heath",
+              "last": "Morgan",
+              "group": 6
+            },
+            {
+              "first": "Sarah",
+              "last": "Ort",
+              "group": 7
+            },
+            {
+              "first": "Matt",
+              "last": "Ort",
+              "group": 7
+            },
+            {
+              "first": "Kirsten",
+              "last": "Morgan",
+              "group": 8
+            },
+            {
+              "first": "Chelsea",
+              "last": "Morgan",
+              "group": 9
+            },
+            {
+              "first": "Graham",
+              "last": "Miller",
+              "group": 9
+            },
+            {
+              "first": "Nana",
+              "last": "Lacey",
+              "group": 10
+            },
+            {
+              "first": "Papa",
+              "last": "Lacey",
+              "group": 10
+            },
+            {
+              "first": "Karen",
+              "last": "Preston",
+              "group": 11
+            },
+            {
+              "first": "Brandon",
+              "last": "Lacey",
+              "group": 11
+            },
+            {
+              "first": "Brent",
+              "last": "Preston",
+              "group": 12
+            },
+            {
+              "first": "Scott",
+              "last": "Lacey",
+              "group": 13
+            },
+            {
+              "first": "Liz",
+              "last": "Lacey",
+              "group": 13
+            },
+            {
+              "first": "Scott",
+              "last": "Evans",
+              "group": 14
+            },
+            {
+              "first": "Julie",
+              "last": "Evans",
+              "group": 14
+            },
+            {
+              "first": "Tyler",
+              "last": "Evans",
+              "group": 14
+            },
+            {
+              "first": "Cami",
+              "last": "Evans",
+              "group": 14
+            },
+            {
+              "first": "Nancy",
+              "last": "Gwinn",
+              "group": 15
+            },
+            {
+              "first": "Jim",
+              "last": "Gwinn",
+              "group": 15
+            },
+            {
+              "first": "Gina",
+              "last": "Miller",
+              "group": 16
+            },
+            {
+              "first": "Larry",
+              "last": "Miller",
+              "group": 16
+            },
+            {
+              "first": "Mike",
+              "last": "Caskey",
+              "group": 17
+            },
+            {
+              "first": "Jamie",
+              "last": "Caskey",
+              "group": 17
+            },
+            {
+              "first": "Brooke",
+              "last": "Prewitt",
+              "group": 18
+            },
+            {
+              "first": "Cory",
+              "last": "Prewitt",
+              "group": 18
+            },
+            {
+              "first": "Matthew",
+              "last": "Layne",
+              "group": 19
+            },
+            {
+              "first": "Sarah",
+              "last": "Layne",
+              "group": 19
+            },
+            {
+              "first": "Cindy",
+              "last": "Layne",
+              "group": 20
+            },
+            {
+              "first": "Keith",
+              "last": "Layne",
+              "group": 20
+            },
+            {
+              "first": "Pappy",
+              "last": "Caskey",
+              "group": 21
+            },
+            {
+              "first": "Lauren",
+              "last": "Richardson",
+              "group": 22
+            },
+            {
+              "first": "Blake",
+              "last": "Richardson",
+              "group": 22
+            },
+            {
+              "first": "Todd",
+              "last": "Caskey",
+              "group": 23
+            },
+            {
+              "first": "Carnice",
+              "last": "Caskey",
+              "group": 23
+            },
+            {
+              "first": "Dave",
+              "last": "Caskey",
+              "group": 24
+            },
+            {
+              "first": "JT",
+              "last": "Caskey",
+              "group": 25
+            },
+            {
+              "first": "Lyndsay",
+              "last": "Caskey",
+              "group": 25
+            },
+            {
+              "first": "Paige",
+              "last": "Baker",
+              "group": 26
+            },
+            {
+              "first": "Cameron",
+              "last": "Baker",
+              "group": 26
+            },
+            {
+              "first": "Adam",
+              "last": "Caskey",
+              "group": 27
+            },
+            {
+              "first": "Bill",
+              "last": "Rhodes",
+              "group": 28
+            },
+            {
+              "first": "Chris",
+              "last": "Rhodes",
+              "group": 28
+            },
+            {
+              "first": "Pat",
+              "last": "Totty",
+              "group": 29
+            },
+            {
+              "first": "Amanda",
+              "last": "Totty",
+              "group": 29
+            },
+            {
+              "first": "Madison",
+              "last": "Nolen",
+              "group": 30
+            },
+            {
+              "first": "Omar",
+              "last": "Cardona",
+              "group": 30
+            },
+            {
+              "first": "Chelsea",
+              "last": "Carter",
+              "group": 31
+            },
+            {
+              "first": "Kyle",
+              "last": "Clark",
+              "group": 31
+            },
+            {
+              "first": "Patricia",
+              "last": "Skryzpek",
+              "group": 32
+            },
+            {
+              "first": "Vincent",
+              "last": "Radziul",
+              "group": 32
+            },
+            {
+              "first": "Megan",
+              "last": "Ranker",
+              "group": 33
+            },
+            {
+              "first": "Jessica",
+              "last": "Coates",
+              "group": 34
+            },
+            {
+              "first": "Collin",
+              "last": "Coates",
+              "group": 34
+            },
+            {
+              "first": "Kelly",
+              "last": "Nortz",
+              "group": 35
+            },
+            {
+              "first": "Monica",
+              "last": "Boisvenue",
+              "group": 36
+            },
+            {
+              "first": "Caitlyn",
+              "last": "Durkin",
+              "group": 37
+            },
+            {
+              "first": "Ewan",
+              "last": "Durkin",
+              "group": 37
+            },
+            {
+              "first": "Dani",
+              "last": "Bruno",
+              "group": 38
+            },
+            {
+              "first": "Evan",
+              "last": "Demers",
+              "group": 38
+            },
+            {
+              "first": "Wendi",
+              "last": "Witek",
+              "group": 39
+            },
+            {
+              "first": "Brittany",
+              "last": "Whittaker",
+              "group": 40
+            },
+            {
+              "first": "Mike",
+              "last": "Benning",
+              "group": 40
+            },
+            {
+              "first": "Jessica",
+              "last": "Hackney",
+              "group": 41
+            },
+            {
+              "first": "Don",
+              "last": "Pingley",
+              "group": 41
+            },
+            {
+              "first": "Erin",
+              "last": "Young",
+              "group": 42
+            },
+            {
+              "first": "Nick",
+              "last": "Young",
+              "group": 42
+            },
+            {
+              "first": "Kelsey",
+              "last": "Haldeman",
+              "group": 43
+            },
+            {
+              "first": "Rachael",
+              "last": "Young",
+              "group": 43
+            },
+            {
+              "first": "Rose",
+              "last": "Mediati",
+              "group": 44
+            },
+            {
+              "first": "Kirby",
+              "last": "Brock",
+              "group": 45
+            },
+            {
+              "first": "John",
+              "last": "Brock",
+              "group": 45
+            },
+            {
+              "first": "Shannon",
+              "last": "Kelly",
+              "group": 46
+            },
+            {
+              "first": "Emma",
+              "last": "Sousa",
+              "group": 47
+            },
+            {
+              "first": "Sam",
+              "last": "Owens",
+              "group": 48
+            },
+            {
+              "first": "Rob",
+              "last": "Owens",
+              "group": 48
+            },
+            {
+              "first": "Allison",
+              "last": "Cunningham",
+              "group": 49
+            },
+            {
+              "first": "Emily",
+              "last": "Florian",
+              "group": 50
+            },
+            {
+              "first": "Thomas",
+              "last": "Florian",
+              "group": 50
+            },
+            {
+              "first": "Mary Katherine",
+              "last": "Price",
+              "group": 51
+            },
+            {
+              "first": "Michael",
+              "last": "Price",
+              "group": 51
+            },
+            {
+              "first": "Juan",
+              "last": "Emerson",
+              "group": 52
+            },
+            {
+              "first": "Katie",
+              "last": "Hurton",
+              "group": 52
+            },
+            {
+              "first": "Matt",
+              "last": "Chandler",
+              "group": 53
+            },
+            {
+              "first": "Jordan",
+              "last": "Schechter",
+              "group": 54
+            },
+            {
+              "first": "Tiffany",
+              "last": "Chu",
+              "group": 54
+            },
+            {
+              "first": "Jamie",
+              "last": "Phillips",
+              "group": 55
+            },
+            {
+              "first": "Bridget",
+              "last": "Phillips",
+              "group": 55
+            },
+            {
+              "first": "Stefan",
+              "last": "Dzara",
+              "group": 56
+            },
+            {
+              "first": "Abbie",
+              "last": "Dzara",
+              "group": 56
+            },
+            {
+              "first": "Karen",
+              "last": "McGarvey",
+              "group": 57
+            },
+            {
+              "first": "Chris",
+              "last": "McGarvey",
+              "group": 57
+            },
+            {
+              "first": "Erin",
+              "last": "Gallagher",
+              "group": 58
+            },
+            {
+              "first": "Allison",
+              "last": "Boisvenue",
+              "group": 59
+            },
+            {
+              "first": "Geo",
+              "last": "Boisvenue",
+              "group": 59
+            },
+            {
+              "first": "Kathryn",
+              "last": "Mouton",
+              "group": 60
+            },
+            {
+              "first": "Nick",
+              "last": "Mouton",
+              "group": 60
+            },
+            {
+              "first": "Jared",
+              "last": "Lubrico",
+              "group": 61
+            },
+            {
+              "first": "Scott",
+              "last": "Keiffer",
+              "group": 62
+            },
+            {
+              "first": "Cait",
+              "last": "Keiffer",
+              "group": 62
+            },
+            {
+              "first": "Leslie",
+              "last": "Phillips",
+              "group": 63
+            },
+            {
+              "first": "Nate",
+              "last": "Phillips",
+              "group": 63
+            }
+          ]
+    }
+};
+
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
@@ -273,6 +851,7 @@ $(document).ready(function () {
     });
 
     /********************** Add to Calendar **********************/
+    /*
     var myCalendar = createCalendar({
         options: {
             class: '',
@@ -281,7 +860,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Jessica and Parker's Elopement",
+            title: "Jessica and Parker's Vow Renewal",
 
             // Event start date
             start: new Date('Feb 26, 2022 00:00'),
@@ -302,37 +881,236 @@ $(document).ready(function () {
     });
 
     $('#add-to-cal').html(myCalendar);
-
+    */
 
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
-        var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        if (!rsvpFindMeFormValid()) {
+            return;
+        }
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+        var first = $('#first-name').val();
+        var last = $('#last-name').val();
+
+        var primaryPerson = findByName(first, last);
+
+        //if (rsvpIsAllowed(first, last)){
+        if (primaryPerson != null) {
+            $('#alert-wrapper').html('');
+            $('#rsvp-form').hide();
+
+            $('#rsvp-guest-1').html(primaryPerson.first + ' ' + primaryPerson.last);
+            $('#hiddenGuestOneFirstName').val(primaryPerson.first);
+            $('#hiddenGuestOneLastName').val(primaryPerson.last);
+
+            var secondGuest = findSecondPerson(first, last);
+            
+            if (secondGuest != null){
+                $('#hiddenGuestTwoFirstName').val(secondGuest.first);
+                $('#hiddenGuestTwoLastName').val(secondGuest.last);
+                $('#rsvp-guest-2').html(secondGuest.first + ' ' + secondGuest.last);  
+                $('#rsvp-form-details-2').show();                     
+            }else {
+                $('#rsvp-form-details-2').hide();
+            }
+
+            $('#rsvp-form-details').show();
+
+
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
-                .done(function (data) {
-                    console.log(data);
-                    if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
-                    } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
-                    }
-                })
-                .fail(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
-                });
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your name was not found on the guest list.'));
+        }
+        
+    });
+
+    $('#rsvp-form-details').on('submit', function(e){
+        e.preventDefault();
+        
+        if (!rsvpDetailsFormValid()) {
+            return;
+        }
+        
+        var data = $(this).serialize();
+        console.log(data);
+        
+        
+        $('#alert-wrapper2').html(alert_markup('success', '<strong>Just a sec!</strong> We are saving your details.'));
+    
+        var postUrl = 'https://script.google.com/macros/s/AKfycbxSUXvUd02JTZmOejUGMnKS8MFhg2jMoxlsHFCOsd8MM_YqRWbjqf17vO5x9XAK28fAbg/exec';
+        $.post(postUrl, data)
+            .done(function (data) {
+                console.log(data);
+                if (data.result === "error") {
+                    $('#alert-wrapper2').html(alert_markup('danger', data.message));
+                } else {
+                    $('#alert-wrapper2').html(alert_markup('success', '<strong>Thanks! Your RSVP has been saved.</strong>'));
+                    $('#submit-rsvp-details').hide();
+                    $('#attending_selection_1').attr('disabled', true);                    
+                    $('#food_selection_1').attr('disabled', true);
+                    $('#attending_selection_2').attr('disabled', true);
+                    $('#food_selection_2').attr('disabled', true);
+
+                    var modalText = 'We are so excited to have you join us! Please reach out to Parker if you have any questions. ';
+                    if ($('#attending_selection_1').val() != 'attending') {
+                      modalText = "We are sad you are unable to attend, but look forward to celebrating the next time we see you!";
+                    } 
+                    $('#rsvp-modal-text').html(modalText);
+
+                    $('#rsvp-modal').modal('show');
+                }
+            })
+            .fail(function (data) {
+                console.log(data);
+                $('#alert-wrapper2').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+            });
+        
+    });
+
+    $('#attending_selection_1').change(function(){
+        $('#rsvp-validation-error').hide();
+        if ($(this).val() != null && $(this).val() =='attending') {
+            $('#food_selection_1_group').show();
+            //$('#food_selection_1_group').attr('required', true);
+        } else {
+            $('#food_selection_1_group').hide();
+            //$('#food_selection_1_group').attr('required', false);
         }
     });
 
+    $('#attending_selection_2').change(function(){
+        $('#rsvp-validation-error').hide();
+        if ($(this).val() != null && $(this).val() =='attending') {
+            $('#food_selection_2_group').show();
+            //$('#food_selection_2_group').attr('required', true);
+        } else {
+            $('#food_selection_2_group').hide();
+            //$('#food_selection_2_group').attr('required', false);
+        }
+    });
+
+    $('#food_selection_1').change(function(){
+        $('#rsvp-validation-error').hide();
+    });
+    $('#food_selection_2').change(function(){
+        $('#rsvp-validation-error').hide();
+    });
+
 });
+
+function rsvpIsAllowed(firstName, lastName){
+    if (findByName(firstName, lastName)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function findByName(firstName, lastName) {
+    var first= '';
+    var last = '';
+    $.each(json.people.person, function (index, person){
+        if (person.first.toLowerCase() == firstName.toLowerCase() 
+            && person.last.toLowerCase() == lastName.toLowerCase()) {
+                first = person.first;
+                last = person.last;
+        } 
+    }); 
+    if (first == '' && last == ''){
+        return null;
+    }
+    var found = { first: first, last: last}; 
+    return found;
+}
+
+function findSecondPerson(firstName, lastName) {
+    var groupID = 0;
+    $.each(json.people.person, function (index, person){
+        if (person.first.toLowerCase() == firstName.toLowerCase() 
+            && person.last.toLowerCase() == lastName.toLowerCase()) {
+                groupID = person.group; 
+        } 
+    });  
+
+    var first= '';
+    var last = '';
+    $.each(json.people.person, function (index, person){
+        if (person.group == groupID
+            && (person.first.toLowerCase() != firstName.toLowerCase() 
+                || person.last.toLowerCase() != lastName.toLowerCase())) {
+                first = person.first;
+                last = person.last;
+        } 
+    });  
+
+    if (first == '' && last == ''){
+        return null;
+    }
+    var found = { first: first, last: last};
+
+    return found;
+}
+
+function rsvpFindMeFormValid() {
+    var valid = true;
+
+    if ($('#first-name').val() == null 
+        || $('#first-name').val() == ''
+        ||$('#last-name').val() == null
+        ||$('#last-name').val() == '') {
+        valid = false;
+    }
+
+    if (!valid) {
+        $('#alert-wrapper').html(alert_markup('danger', 'Please enter your first and last name.'));
+    } else { 
+        $('#alert-wrapper').html('');
+    }
+
+    return valid;
+}
+
+function rsvpDetailsFormValid () {
+    var valid = true;
+    var errorMsg = '';
+    if ($('#attending_selection_1').val() == null) {
+        valid = false; 
+        errorMsg = 'Please select an attendence choice.';
+    } 
+    
+    if ($('#attending_selection_1').val() == 'attending' && $('#food_selection_1').val() == null) {
+        valid = false; 
+        if (errorMsg == '') {
+            errorMsg = 'Please select a food choice.';
+        }
+    } 
+
+    if ($('#attending_selection_2').is(':visible')) {
+        if ($('#attending_selection_2').val() == null) {
+            valid = false; 
+            if (errorMsg == '') {
+                errorMsg = 'Please select an attendence choice for your guest.';
+            }
+        }
+
+        if ($('#attending_selection_2').val() == 'attending' && $('#food_selection_2').val() == null) {
+            valid = false; 
+            if (errorMsg == '') {
+                errorMsg = 'Please select a food choice for your guest.';
+            }
+        } 
+    } 
+
+    if (!valid) {
+        $('#alert-wrapper2').html(alert_markup('danger', errorMsg));
+    } else { 
+        $('#alert-wrapper2').html('');
+    }
+
+    return valid;
+}
+
 
 /********************** Extras **********************/
 
@@ -367,7 +1145,8 @@ function initBBSRMap() {
 
 // alert_markup
 function alert_markup(alert_type, msg) {
-    return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
+    //return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
+    return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '</div>';
 }
 
 // MD5 Encoding
@@ -588,3 +1367,6 @@ var MD5 = function (string) {
 
     return temp.toLowerCase();
 };
+
+
+

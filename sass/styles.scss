@@ -884,7 +884,8 @@ Google map
 RSVP form
 ========================================================================== */
 .rsvp {
-  padding-bottom: 140px;
+  // padding-bottom: 140px;
+  padding-bottom: 40px;
   .rsvp-form {
     .rsvp-btn {
       padding: 15px 0;
@@ -917,7 +918,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-utensils, .fa-calendar-check {
         font-size: 14px;
         position: absolute;
         top: 50%;
@@ -944,6 +945,15 @@ RSVP form
       }
       input:-ms-input-placeholder {
         color: $form-placeholder;
+      }
+      select {
+        padding-left: 56px;
+        width: 100%;
+        height: 100%;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        border: none;
       }
     }
   }
@@ -986,6 +996,11 @@ footer {
   }
 }
 
+#thank-you-heart {
+  color: #660000;
+  font-size: xxx-large;
+}
+
 /* ==========================================================================
 Bootstrap override
 ========================================================================== */
@@ -1017,6 +1032,9 @@ Helpers
 .pb-4 {
   padding-bottom: 4px;
 }
+.mt-1 {
+  margin-top: 1em;
+}
 
 #containerProposalVideoYoutube {
   display: none;
@@ -1045,4 +1063,18 @@ p .text-white {
 }
 .close {
   font-size: 40px;
+}
+#rsvp-form-details {
+  display: none;
+}
+#food_selection_1_group, #food_selection_2_group {
+  display: none;
+}
+
+#rsvp-validation-error {
+  display: none;
+}
+
+select {
+  background-color: white;
 }
