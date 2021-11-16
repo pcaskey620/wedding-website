@@ -620,6 +620,11 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
+    $('.wp6-5').waypoint(function () {
+      $('.wp6-5').addClass('animated fadeInUp');
+  }, {
+      offset: '75%'
+  });
     $('.wp7').waypoint(function () {
         $('.wp7').addClass('animated fadeInUp');
     }, {
