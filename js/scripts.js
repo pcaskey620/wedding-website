@@ -896,8 +896,8 @@ $(document).ready(function () {
             return;
         }
 
-        var first = $('#first-name').val();
-        var last = $('#last-name').val();
+        var first = $('#first-name').val().trim();
+        var last = $('#last-name').val().trim();
 
         var primaryPerson = findByName(first, last);
 

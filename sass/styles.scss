@@ -124,6 +124,12 @@ Animations
     transform: scale(1);
   }
 }
+
+.rotate {
+  animate-name: rotate;
+  animation rua
+}
+
 .floating-arrow {
   animation-name: floating-arrow;
   animation-duration: 2s;
@@ -1086,3 +1092,4 @@ select {
 select {
   -webkit-appearance: none;
 }
+
