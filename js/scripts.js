@@ -957,7 +957,7 @@ $(document).ready(function () {
                     $('#attending_selection_2').attr('disabled', true);
                     $('#food_selection_2').attr('disabled', true);
 
-                    var modalText = 'We are so excited to have you join us! Please reach out to Parker if you have any questions. ';
+                    var modalText = '<p>We are so excited to have you join us!</p> <p>Please reach out to Parker if you have any questions. </p>';
                     if ($('#attending_selection_1').val() != 'attending') {
                       modalText = "We are sad you are unable to attend, but look forward to celebrating the next time we see you!";
                     } 
