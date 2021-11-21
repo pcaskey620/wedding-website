@@ -103,11 +103,6 @@ var json = {
               "group": 10
             },
             {
-              "first": "Papa",
-              "last": "Lacey",
-              "group": 10
-            },
-            {
               "first": "Karen",
               "last": "Preston",
               "group": 11
@@ -335,6 +330,11 @@ var json = {
             {
               "first": "Kelly",
               "last": "Nortz",
+              "group": 35
+            },
+            {
+              "first": "Zach",
+              "last": "Rochon",
               "group": 35
             },
             {
