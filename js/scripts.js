@@ -168,6 +168,11 @@ var json = {
               "group": 16
             },
             {
+              "first": "Cameron",
+              "last": "Miller",
+              "group": 16
+            },
+            {
               "first": "Mike",
               "last": "Caskey",
               "group": 17
@@ -330,12 +335,12 @@ var json = {
             {
               "first": "Kelly",
               "last": "Nortz",
-              "group": 35
+              "group": 99
             },
             {
               "first": "Zach",
               "last": "Rochon",
-              "group": 35
+              "group": 99
             },
             {
               "first": "Monica",
@@ -1015,6 +1020,9 @@ function rsvpIsAllowed(firstName, lastName){
 function findByName(firstName, lastName) {
     var first= '';
     var last = '';
+
+    //var people
+
     $.each(json.people.person, function (index, person){
         if (person.first.toLowerCase() == firstName.toLowerCase() 
             && person.last.toLowerCase() == lastName.toLowerCase()) {
