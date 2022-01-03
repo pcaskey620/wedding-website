@@ -42,8 +42,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/styles.min.css?v=1">
-    <link rel="stylesheet" href="css/queries.css?v=1">    
+    <link rel="stylesheet" href="css/styles.min.css?v=2">
+    <link rel="stylesheet" href="css/queries.css?v=2">    
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link type="text/css" rel="stylesheet" href="js/vendor/lightgallery/css/lightgallery.css" />
@@ -345,10 +345,93 @@
                             </div>
                         </div>
                     </div>
-                    <input type="hidden" id="hiddenGuestOneFirstName" name="first_name_1" />                    
-                    <input type="hidden" id="hiddenGuestOneLastName" name="last_name_1" />
-                    <input type="hidden" id="hiddenGuestTwoFirstName" name="first_name_2" />                    
-                    <input type="hidden" id="hiddenGuestTwoLastName" name="last_name_2" />
+                    <div class="row" id="rsvp-form-details-3">
+                        <div class="col-md-12 col-sm-12 text-left">
+                            <label>Guest: </label> <span id="rsvp-guest-3"></span>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-calendar-check"></i>
+                                <select name="attending_selection_3" id="attending_selection_3" class="" >
+                                    <option value="" disabled selected hidden>Select attendence choice</option>
+                                    <option value="attending">Attending</option>
+                                    <option value="not-attending">Not Attending</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group" id="food_selection_3_group">
+                                <i class="fa fa-utensils"></i>
+                                <select name="food_selection_3" id="food_selection_3" class="" >
+                                    <option value="" disabled selected hidden>Select food choice</option>
+                                    <option value="Chicken">Blue cheese stuffed chicken</option>
+                                    <option value="Salmon">Fresh herb encrusted salmon</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="rsvp-form-details-4">
+                        <div class="col-md-12 col-sm-12 text-left">
+                            <label>Guest: </label> <span id="rsvp-guest-4"></span>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-calendar-check"></i>
+                                <select name="attending_selection_4" id="attending_selection_4" class="" >
+                                    <option value="" disabled selected hidden>Select attendence choice</option>
+                                    <option value="attending">Attending</option>
+                                    <option value="not-attending">Not Attending</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group" id="food_selection_4_group">
+                                <i class="fa fa-utensils"></i>
+                                <select name="food_selection_4" id="food_selection_4" class="" >
+                                    <option value="" disabled selected hidden>Select food choice</option>
+                                    <option value="Chicken">Blue cheese stuffed chicken</option>
+                                    <option value="Salmon">Fresh herb encrusted salmon</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="rsvp-form-details-5">
+                        <div class="col-md-12 col-sm-12 text-left">
+                            <label>Guest: </label> <span id="rsvp-guest-5"></span>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-calendar-check"></i>
+                                <select name="attending_selection_5" id="attending_selection_5" class="" >
+                                    <option value="" disabled selected hidden>Select attendence choice</option>
+                                    <option value="attending">Attending</option>
+                                    <option value="not-attending">Not Attending</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-input-group" id="food_selection_5_group">
+                                <i class="fa fa-utensils"></i>
+                                <select name="food_selection_5" id="food_selection_5" class="" >
+                                    <option value="" disabled selected hidden>Select food choice</option>
+                                    <option value="Chicken">Blue cheese stuffed chicken</option>
+                                    <option value="Salmon">Fresh herb encrusted salmon</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input type="hidden" id="hiddenGuestFirstName1" name="first_name_1" />                    
+                    <input type="hidden" id="hiddenGuestLastName1" name="last_name_1" />
+                    <input type="hidden" id="hiddenGuestFirstName2" name="first_name_2" />                    
+                    <input type="hidden" id="hiddenGuestLastName2" name="last_name_2" />
+                    <input type="hidden" id="hiddenGuestFirstName3" name="first_name_3" />                    
+                    <input type="hidden" id="hiddenGuestLastName3" name="last_name_3" />
+                    <input type="hidden" id="hiddenGuestFirstName4" name="first_name_4" />                    
+                    <input type="hidden" id="hiddenGuestLastName4" name="last_name_4" />
+                    <input type="hidden" id="hiddenGuestFirstName5" name="first_name_5" />                    
+                    <input type="hidden" id="hiddenGuestLastName5" name="last_name_5" />
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper2"></div>
                     </div>
@@ -993,7 +1076,7 @@
 <script src="js/vendor/lightgallery/js/lg-fullscreen.js"></script>
 <script src="js/vendor/lightgallery/js/lg-thumbnail.js"></script>
 
-<script src="js/scripts.min.js?v=2"></script>
+<script src="js/scripts.min.js?v=3"></script>
 <!-- <script src="js/scripts.js"></script> -->
 
 <script async defer

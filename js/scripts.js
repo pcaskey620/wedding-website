@@ -904,35 +904,44 @@ $(document).ready(function () {
         var first = $('#first-name').val().trim();
         var last = $('#last-name').val().trim();
 
-        var primaryPerson = findByName(first, last);
+        var attendees = findByName(first, last);
 
-        //if (rsvpIsAllowed(first, last)){
-        if (primaryPerson != null) {
+        if (attendees.length < 1)
+        {
+          $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your name was not found on the guest list.'));
+        }
+        else {
             $('#alert-wrapper').html('');
             $('#rsvp-form').hide();
 
-            $('#rsvp-guest-1').html(primaryPerson.first + ' ' + primaryPerson.last);
-            $('#hiddenGuestOneFirstName').val(primaryPerson.first);
-            $('#hiddenGuestOneLastName').val(primaryPerson.last);
+            attendees.forEach(function(attendee, index, arr){
+              var fullName = attendee.first + ' ' + attendee.last
+              var guestNumber = index + 1;
 
-            var secondGuest = findSecondPerson(first, last);
-            
-            if (secondGuest != null){
-                $('#hiddenGuestTwoFirstName').val(secondGuest.first);
-                $('#hiddenGuestTwoLastName').val(secondGuest.last);
-                $('#rsvp-guest-2').html(secondGuest.first + ' ' + secondGuest.last);  
-                $('#rsvp-form-details-2').show();                     
-            }else {
-                $('#rsvp-form-details-2').hide();
+              $('#rsvp-guest-' + guestNumber).html(fullName);
+              $('#hiddenGuestFirstName' + guestNumber).val(attendee.first);
+              $('#hiddenGuestLastName' + guestNumber).val(attendee.last); 
+              $('#rsvp-form-details-' + guestNumber).show();
+            });
+
+            if (attendees.length == 1) {
+              $('#rsvp-form-details-2').hide();
+              $('#rsvp-form-details-3').hide();
+              $('#rsvp-form-details-4').hide();
+              $('#rsvp-form-details-5').hide();
+            }else if (attendees.length == 2){
+              $('#rsvp-form-details-3').hide();
+              $('#rsvp-form-details-4').hide();
+              $('#rsvp-form-details-5').hide();
+            }else if (attendees.length == 3){
+              $('#rsvp-form-details-4').hide();
+              $('#rsvp-form-details-5').hide();
+            }else if (attendees.length == 4){
+              $('#rsvp-form-details-5').hide();
             }
 
             $('#rsvp-form-details').show();
-
-
-        } else {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your name was not found on the guest list.'));
-        }
-        
+        } 
     });
 
     $('#rsvp-form-details').on('submit', function(e){
@@ -957,10 +966,17 @@ $(document).ready(function () {
                 } else {
                     $('#alert-wrapper2').html(alert_markup('success', '<strong>Thanks! Your RSVP has been saved.</strong>'));
                     $('#submit-rsvp-details').hide();
+                    
                     $('#attending_selection_1').attr('disabled', true);                    
                     $('#food_selection_1').attr('disabled', true);
                     $('#attending_selection_2').attr('disabled', true);
                     $('#food_selection_2').attr('disabled', true);
+                    $('#attending_selection_3').attr('disabled', true);                    
+                    $('#food_selection_3').attr('disabled', true);
+                    $('#attending_selection_4').attr('disabled', true);
+                    $('#food_selection_4').attr('disabled', true);
+                    $('#attending_selection_5').attr('disabled', true);
+                    $('#food_selection_5').attr('disabled', true);
 
                     var modalText = '<p>We are so excited to have you join us!</p> <p>Please reach out to Parker if you have any questions. </p>';
                     if ($('#attending_selection_1').val() != 'attending') {
@@ -993,10 +1009,35 @@ $(document).ready(function () {
         $('#rsvp-validation-error').hide();
         if ($(this).val() != null && $(this).val() =='attending') {
             $('#food_selection_2_group').show();
-            //$('#food_selection_2_group').attr('required', true);
         } else {
             $('#food_selection_2_group').hide();
-            //$('#food_selection_2_group').attr('required', false);
+        }
+    });
+
+    $('#attending_selection_3').change(function(){
+        $('#rsvp-validation-error').hide();
+        if ($(this).val() != null && $(this).val() =='attending') {
+            $('#food_selection_3_group').show();
+        } else {
+            $('#food_selection_3_group').hide();
+        }
+    });
+
+    $('#attending_selection_4').change(function(){
+        $('#rsvp-validation-error').hide();
+        if ($(this).val() != null && $(this).val() =='attending') {
+            $('#food_selection_4_group').show();
+        } else {
+            $('#food_selection_4_group').hide();
+        }
+    });
+
+    $('#attending_selection_5').change(function(){
+        $('#rsvp-validation-error').hide();
+        if ($(this).val() != null && $(this).val() =='attending') {
+            $('#food_selection_5_group').show();
+        } else {
+            $('#food_selection_5_group').hide();
         }
     });
 
@@ -1004,6 +1045,15 @@ $(document).ready(function () {
         $('#rsvp-validation-error').hide();
     });
     $('#food_selection_2').change(function(){
+        $('#rsvp-validation-error').hide();
+    });
+    $('#food_selection_3').change(function(){
+        $('#rsvp-validation-error').hide();
+    });
+    $('#food_selection_4').change(function(){
+        $('#rsvp-validation-error').hide();
+    });
+    $('#food_selection_5').change(function(){
         $('#rsvp-validation-error').hide();
     });
 
@@ -1018,23 +1068,29 @@ function rsvpIsAllowed(firstName, lastName){
 }
 
 function findByName(firstName, lastName) {
-    var first= '';
-    var last = '';
-
-    //var people
-
-    $.each(json.people.person, function (index, person){
-        if (person.first.toLowerCase() == firstName.toLowerCase() 
-            && person.last.toLowerCase() == lastName.toLowerCase()) {
-                first = person.first;
-                last = person.last;
+    
+    var attendees = [];
+    var groupID = 0;
+    var primaryPerson;
+    $.each(json.people.person, function (index, attendee){
+        if (attendee.first.toLowerCase() == firstName.toLowerCase() 
+            && attendee.last.toLowerCase() == lastName.toLowerCase()) {
+              attendees.push(attendee); 
+              groupID = attendee.group;     
+              primaryPerson = attendee;          
         } 
     }); 
-    if (first == '' && last == ''){
+    if (attendees.length < 1){
         return null;
-    }
-    var found = { first: first, last: last}; 
-    return found;
+    }    
+    
+    $.each(json.people.person, function(index, attendee){
+        if (attendee == primaryPerson) { return; }
+        if (attendee.group != groupID) { return; }
+        attendees.push(attendee);
+    });
+
+    return attendees;
 }
 
 function findSecondPerson(firstName, lastName) {
@@ -1114,6 +1170,54 @@ function rsvpDetailsFormValid () {
             }
         } 
     } 
+
+    if ($('#attending_selection_3').is(':visible')) {
+        if ($('#attending_selection_3').val() == null) {
+            valid = false; 
+            if (errorMsg == '') {
+                errorMsg = 'Please select an attendence choice for your guest.';
+            }
+        }
+
+        if ($('#attending_selection_3').val() == 'attending' && $('#food_selection_3').val() == null) {
+            valid = false; 
+            if (errorMsg == '') {
+                errorMsg = 'Please select a food choice for your guest.';
+            }
+        } 
+    }
+    
+    if ($('#attending_selection_4').is(':visible')) {
+        if ($('#attending_selection_4').val() == null) {
+            valid = false; 
+            if (errorMsg == '') {
+                errorMsg = 'Please select an attendence choice for your guest.';
+            }
+        }
+
+        if ($('#attending_selection_4').val() == 'attending' && $('#food_selection_4').val() == null) {
+            valid = false; 
+            if (errorMsg == '') {
+                errorMsg = 'Please select a food choice for your guest.';
+            }
+        } 
+    } 
+
+    if ($('#attending_selection_5').is(':visible')) {
+        if ($('#attending_selection_5').val() == null) {
+            valid = false; 
+            if (errorMsg == '') {
+                errorMsg = 'Please select an attendence choice for your guest.';
+            }
+        }
+
+        if ($('#attending_selection_5').val() == 'attending' && $('#food_selection_5').val() == null) {
+            valid = false; 
+            if (errorMsg == '') {
+                errorMsg = 'Please select a food choice for your guest.';
+            }
+        } 
+    }
 
     if (!valid) {
         $('#alert-wrapper2').html(alert_markup('danger', errorMsg));

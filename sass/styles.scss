@@ -125,17 +125,17 @@ Animations
   }
 }
 
-.rotate {
-  animate-name: rotate;
-  animation rua
-}
+// .rotate {
+//   animate-name: rotate;
+//   animation rua
+// }
 
-.floating-arrow {
-  animation-name: floating-arrow;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
+// .floating-arrow {
+//   animation-name: floating-arrow;
+//   animation-duration: 2s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: ease-in-out;
+// }
 @keyframes floating-arrow {
   from {
     transform: translate(-50%, 0)
@@ -1077,7 +1077,7 @@ p .text-white {
 #rsvp-form-details {
   display: none;
 }
-#food_selection_1_group, #food_selection_2_group {
+#food_selection_1_group, #food_selection_2_group, #food_selection_3_group, #food_selection_4_group, #food_selection_5_group {
   display: none;
 }
 
